@@ -166,6 +166,13 @@
   line-height: 1.5;
 }
 
+.devGradient {
+  background: linear-gradient(135deg, #05A3BE 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 @media (max-width: 900px) {
   .footer {
     margin-top: 32px;
@@ -186,5 +193,7 @@
   }
   .disclaimer {
     margin: 32px auto 0;
+    justify-content: center !important;
+    text-align: center;
   }
 }

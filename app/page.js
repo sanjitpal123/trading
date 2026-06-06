@@ -100,8 +100,8 @@ export default function Home() {
             </p>
             
             <div className={styles.heroActions}>
-              <GlowButton>Start Learning for Free</GlowButton>
-              <GlowButton>Explore Courses</GlowButton>
+              <GlowButton href="#education">Start Learning for Free</GlowButton>
+              <GlowButton href="#mentorship">Explore Courses</GlowButton>
             </div>
           </motion.div>
         </section>
@@ -137,10 +137,10 @@ export default function Home() {
                 <div className={styles.educationAvatar}>
                   <Image src="/bento_mentorship.png" alt="Support" fill style={{ objectFit: 'cover' }} />
                 </div>
-                <span className={styles.educationPhone}>Phone: 8927578901</span>
+                <span className={styles.educationPhone}>Phone: +91 8927578901</span>
               </div>
               
-              <GlowButton>Learn More</GlowButton>
+              <GlowButton href="#workshops">Learn More</GlowButton>
             </div>
             
             <div className={styles.educationImageWrapper}>
@@ -223,20 +223,20 @@ export default function Home() {
             </div>
           </div>
 
-          <div style={{ marginTop: "64px", marginBottom: "32px" }}>
+          <div className={styles.videoSliderWrapper}>
             <VideoReviewsSlider />
           </div>
         </section>
 
         {/* Horizontal Promo Banner */}
-        <section style={{ width: '100%', maxWidth: '1200px', margin: '0 auto 64px', padding: '0 24px' }}>
+        <section className={styles.promoSectionWrapper}>
           <div className={styles.horizontalPromoBanner}>
             <div className={styles.horizontalPromoLeft}>
               <p style={{ color: "var(--text-secondary)", fontSize: "14px", fontWeight: "700", marginBottom: "8px", textTransform: "uppercase" }}>Get Our</p>
               <h2 className={styles.promoTitle} style={{ fontSize: "36px", marginBottom: "8px" }}><span className="text-gradient">Trade Pulse</span> Traders Institute</h2>
               <p style={{ color: "#fff", fontSize: "20px", fontWeight: "600", marginBottom: "16px" }}>MEMBER PORTAL</p>
               <p style={{ color: "var(--text-secondary)", fontSize: "14px", marginBottom: "32px" }}>Free access, just for attending</p>
-              <GlowButton className={styles.pulseGlowAnim}>Get Started Now</GlowButton>
+              <GlowButton href="#workshops" className={styles.pulseGlowAnim}>Get Started Now</GlowButton>
             </div>
             <div className={styles.horizontalPromoRight}>
               <div className={styles.promoFeature}>
@@ -442,7 +442,7 @@ export default function Home() {
                 <li>✔ 94% Prop Firm Pass Rate for Mentorship Students</li>
               </ul>
               <div style={{ marginTop: '32px' }}>
-                <GlowButton>Meet the Team</GlowButton>
+                <GlowButton href="#reviews">Meet the Team</GlowButton>
               </div>
             </div>
             <div className={styles.aboutImageWrapper}>
@@ -485,7 +485,7 @@ export default function Home() {
             <p className={styles.workshopSubtitle}>
               Get First Access to our World-Class Workshops & Live Trading Sessions led by the Envision Team. These are designed to test your ability, assist you in your learning and make you a more competent trader.
             </p>
-            <GlowButton className={styles.pulseGlowAnim}>Join Now</GlowButton>
+            <GlowButton href="#contact" className={styles.pulseGlowAnim}>Join Now</GlowButton>
           </div>
         </section>
 
@@ -524,7 +524,7 @@ export default function Home() {
                 <li><span className={styles.checkIcon}>✓</span> Those who have spent time in the...</li>
                 <li className={styles.moreDetails}>And more details inside...</li>
               </ul>
-              <GlowButton>EXPLORE BASECAMP</GlowButton>
+              <GlowButton href="#contact">EXPLORE BASECAMP</GlowButton>
             </div>
             
             {/* Vanguard */}
@@ -554,7 +554,7 @@ export default function Home() {
                 <li><span className={styles.checkIcon}>✓</span> Traders facing challenges with...</li>
                 <li className={styles.moreDetails}>And more details inside...</li>
               </ul>
-              <GlowButton>EXPLORE VANGUARD</GlowButton>
+              <GlowButton href="#contact">EXPLORE VANGUARD</GlowButton>
             </div>
             
             {/* Legacy */}
@@ -584,7 +584,7 @@ export default function Home() {
                 <li><span className={styles.checkIcon}>✓</span> Professionals who prefer strategic...</li>
                 <li className={styles.moreDetails}>And more details inside...</li>
               </ul>
-              <GlowButton>EXPLORE LEGACY</GlowButton>
+              <GlowButton href="#contact">EXPLORE LEGACY</GlowButton>
             </div>
             
             {/* Elite */}
@@ -614,14 +614,14 @@ export default function Home() {
                 <li><span className={styles.checkIcon}>✓</span> Traders who want detailed feedback...</li>
                 <li className={styles.moreDetails}>And more details inside...</li>
               </ul>
-              <GlowButton>APPLY FOR ELITE</GlowButton>
+              <GlowButton href="#contact">APPLY FOR ELITE</GlowButton>
             </div>
           </div>
         </section>
 
         {/* Contact Section */}
         
-        <section className={styles.contactSection}>
+        <section id="contact" className={styles.contactSection}>
           <div className={styles.formContainerWide}>
             <div className={styles.formTitleRow}>
               <div className={styles.formTitleLine}></div>

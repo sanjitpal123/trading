@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "./components/ThemeProvider";
+import FloatingContact from "./components/FloatingContact";
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
+          <FloatingContact />
         </ThemeProvider>
       </body>
     </html>

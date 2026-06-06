@@ -85,7 +85,7 @@ export default function PrivacyPolicy() {
                 5. Contact Us
               </h2>
               <p className={styles.text}>
-                If you have questions or comments about this notice, you may email us at <strong>tradepulse14@gmail.com</strong> or contact us by phone at <strong>8927578901</strong>.
+                If you have questions or comments about this notice, you may email us at <strong>tradepulse14@gmail.com</strong> or contact us by phone at <strong>+91 8927578901</strong>.
               </p>
             </section>
           </div>

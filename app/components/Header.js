@@ -21,18 +21,19 @@ export default function Header() {
               priority
             />
           </Link>
-          <nav className={styles.desktopNav}>
-            <Link href="#reviews" className={styles.navLink}>Reviews</Link>
-            <Link href="#education" className={styles.navLink}>Education</Link>
-            <Link href="#strategy" className={styles.navLink}>Strategy</Link>
-            <Link href="#workshops" className={styles.navLink}>Workshops</Link>
-            <Link href="#mentorship" className={styles.navLink}>Mentorship</Link>
-          </nav>
         </div>
+        
+        <nav className={styles.desktopNav}>
+          <Link href="#reviews" className={styles.navLink}>Reviews</Link>
+          <Link href="#education" className={styles.navLink}>Education</Link>
+          <Link href="#strategy" className={styles.navLink}>Strategy</Link>
+          <Link href="#workshops" className={styles.navLink}>Workshops</Link>
+          <Link href="#mentorship" className={styles.navLink}>Mentorship</Link>
+        </nav>
         
         <div className={styles.rightSection}>
           <div className={styles.headerRight}>
-            <Link href="/join" className={styles.registerBtn}>Join Now</Link>
+            <Link href="/#contact" className={styles.registerBtn}>Join Now</Link>
           </div>
           
           <button 
