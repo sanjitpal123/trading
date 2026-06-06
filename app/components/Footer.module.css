@@ -119,9 +119,8 @@
 }
 
 .socialGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 32px);
-  gap: 12px;
+  display: flex;
+  gap: 16px;
   margin-bottom: 24px;
 }
 
@@ -187,6 +186,9 @@
   .footerCol {
     align-items: center;
     text-align: center;
+  }
+  .socialGrid {
+    justify-content: center;
   }
   .footerLinks {
     align-items: center;
