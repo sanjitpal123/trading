@@ -28,10 +28,12 @@
 
 .callBtn {
   background: linear-gradient(135deg, #05A3BE 0%, #00f2fe 100%);
+  box-shadow: 0 0 15px rgba(5, 163, 190, 0.6);
 }
 
 .waBtn {
-  background: #25D366;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.6);
 }
 
 @media (max-width: 768px) {

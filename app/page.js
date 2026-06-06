@@ -29,15 +29,15 @@ const tradingPairs = [
 
 const faqs = [
   { question: "Do I need prior trading experience?", answer: "No, our Beginner Bootcamp is designed to take you from absolute zero to understanding market structure." },
-  { question: "Are the live sessions recorded?", answer: "Yes, all NY session live streams are recorded and uploaded to the vault within 2 hours." },
+  { question: "Are the physical classes recorded?", answer: "Yes, all our in-person trading sessions and lectures are recorded and uploaded to the student vault for you to review." },
   { question: "What markets do you trade?", answer: "Our strategies apply to all high-liquidity markets: Forex, Crypto, Indices, and Commodities." },
-  { question: "Can I cancel my subscription?", answer: "Yes, you can cancel at any time from your dashboard, no questions asked." }
+  { question: "Can I manage my enrollment?", answer: "Yes, you can manage your course enrollment at the administration office or from your student dashboard." }
 ];
 
 const testimonials = [
-  { name: "Sarah J.", handle: "@sarah_trades", review: "Passed my $100k prop firm challenge in just 3 weeks after taking the Liquidity Concepts course.", avatar: "👩‍💼", role: "Funded Trader" },
-  { name: "Michael T.", handle: "@mike_fx", review: "The NY session live streams are a cheat code. Seeing a 7-figure trader execute live completely fixed my psychology.", avatar: "👨‍💻", role: "Pro Member" },
-  { name: "David L.", handle: "@dave_crypto", review: "I was stuck in a break-even cycle for years. The advanced risk management calculator finally got me profitable.", avatar: "👨‍💼", role: "Funded Trader" }
+  { name: "Rohan Desai", handle: "@rohan_trades", review: "Passed my ₹80L prop firm challenge in just 3 weeks after taking the Liquidity Concepts course at the institute.", avatar: "👨‍💼", role: "Funded Trader" },
+  { name: "Arjun Mehta", handle: "@arjun_fx", review: "The in-person trading sessions at the campus are a cheat code. Seeing a 7-figure trader execute live completely fixed my psychology.", avatar: "👨‍💻", role: "Pro Member" },
+  { name: "Priya Sharma", handle: "@priya_crypto", review: "I was stuck in a break-even cycle for years. The physical classroom sessions and 1-on-1 feedback finally got me profitable.", avatar: "👩‍💼", role: "Funded Trader" }
 ];
 
 const companyTabData = {
@@ -96,12 +96,12 @@ export default function Home() {
             </h1>
             
             <p className={styles.heroSubtitle}>
-              Learn institutional trading strategies from funded traders. Get access to our proprietary indicators, live sessions, and 1-on-1 mentorship.
+              Learn institutional trading strategies from funded traders at our institute. Get access to our physical trading floor, in-person classes, and 1-on-1 mentorship.
             </p>
             
             <div className={styles.heroActions}>
-              <GlowButton href="#education">Start Learning for Free</GlowButton>
-              <GlowButton href="#mentorship">Explore Courses</GlowButton>
+              <GlowButton href="#education">Book a Campus Tour</GlowButton>
+              <GlowButton href="#mentorship">Explore Offline Courses</GlowButton>
             </div>
           </motion.div>
         </section>
@@ -130,7 +130,7 @@ export default function Home() {
             <div className={styles.educationContent}>
               <h3 className={styles.educationSubtitle}><span className="text-gradient">Global</span> Territories</h3>
               <p className={styles.educationText}>
-                We invite you to join us for an upcoming intro class. Our experienced instructors and staff are here to help you build skills and confidence as you progress in your financial education. As a Trade Pulse Traders Institute student, you'll become part of a community of traders and investors committed to excellence.
+                We invite you to join us for an upcoming in-person intro class at our campus. Our experienced instructors and staff are here to help you build skills and confidence as you progress in your financial education. As a Trade Pulse Traders Institute student, you'll become part of a community of traders and investors committed to excellence.
               </p>
               
               <div className={styles.educationContact}>
@@ -164,61 +164,61 @@ export default function Home() {
           <div className={styles.imgTestimonialsGrid}>
             <div className={styles.imgTestimonialCard}>
               <div className={styles.imgTestimonialBg}>
-                <Image src="/test_mac.png" alt="Mac C." fill style={{ objectFit: 'cover' }} />
+                <Image src="/test_arjun.png" alt="Arjun M." fill style={{ objectFit: 'cover', objectPosition: 'top center' }} />
               </div>
               <div className={styles.imgTestimonialOverlay}></div>
               <div className={styles.imgTestimonialContent}>
                 <div className={styles.imgTestimonialQuote}>
                   <span className={styles.imgTestimonialQuoteIcon}>&ldquo;</span>
-                  Trade Pulse Traders Institute provides education for any kind of market. Up, down or sideways.
-                  <span style={{ alignSelf: 'flex-end' }} className={styles.imgTestimonialQuoteIcon}>&rdquo;</span>
+                  Trade Pulse Traders Institute completely changed my approach to the markets. The in-person mentorship on the trading floor helped me understand institutional order flow in real time. I've been consistently profitable for 6 months now.
+                  <span className={styles.imgTestimonialQuoteIcon}>&rdquo;</span>
                 </div>
-                <div className={styles.imgTestimonialName}>Mac C.</div>
+                <div className={styles.imgTestimonialName}>Arjun Mehta</div>
               </div>
             </div>
             
             <div className={styles.imgTestimonialCard}>
               <div className={styles.imgTestimonialBg}>
-                <Image src="/test_melanie.png" alt="Melanie T." fill style={{ objectFit: 'cover' }} />
+                <Image src="/test_priya.png" alt="Priya S." fill style={{ objectFit: 'cover', objectPosition: 'top center' }} />
               </div>
               <div className={styles.imgTestimonialOverlay}></div>
               <div className={styles.imgTestimonialContent}>
                 <div className={styles.imgTestimonialQuote}>
                   <span className={styles.imgTestimonialQuoteIcon}>&ldquo;</span>
-                  Trade Pulse Traders Institute does a fabulous job of taking you through step-by-step. It is about educating you for life, not just for the minute.
-                  <span style={{ alignSelf: 'flex-end' }} className={styles.imgTestimonialQuoteIcon}>&rdquo;</span>
+                  The structure of the courses is phenomenal. Instead of just teaching random strategies, they focus on risk management and psychology. The physical classroom environment makes a huge difference in learning discipline.
+                  <span className={styles.imgTestimonialQuoteIcon}>&rdquo;</span>
                 </div>
-                <div className={styles.imgTestimonialName}>Melanie T.</div>
+                <div className={styles.imgTestimonialName}>Priya Sharma</div>
               </div>
             </div>
             
             <div className={styles.imgTestimonialCard}>
               <div className={styles.imgTestimonialBg}>
-                <Image src="/test_mark.png" alt="Mark J." fill style={{ objectFit: 'cover' }} />
+                <Image src="/test_rohan.png" alt="Rohan D." fill style={{ objectFit: 'cover', objectPosition: 'top center' }} />
               </div>
               <div className={styles.imgTestimonialOverlay}></div>
               <div className={styles.imgTestimonialContent}>
                 <div className={styles.imgTestimonialQuote}>
                   <span className={styles.imgTestimonialQuoteIcon}>&ldquo;</span>
-                  The most important place you should invest in is yourself.
-                  <span style={{ alignSelf: 'flex-end' }} className={styles.imgTestimonialQuoteIcon}>&rdquo;</span>
+                  Investing in myself through Trade Pulse Traders Institute was the best decision I've made. The live trading sessions at the campus allowed me to see exactly how professionals navigate volatile markets, eliminating all my guesswork.
+                  <span className={styles.imgTestimonialQuoteIcon}>&rdquo;</span>
                 </div>
-                <div className={styles.imgTestimonialName}>Mark J.</div>
+                <div className={styles.imgTestimonialName}>Rohan Desai</div>
               </div>
             </div>
             
             <div className={styles.imgTestimonialCard}>
               <div className={styles.imgTestimonialBg}>
-                <Image src="/test_beatriz.png" alt="Beatriz P." fill style={{ objectFit: 'cover' }} />
+                <Image src="/test_neha.png" alt="Neha K." fill style={{ objectFit: 'cover', objectPosition: 'top center' }} />
               </div>
               <div className={styles.imgTestimonialOverlay}></div>
               <div className={styles.imgTestimonialContent}>
                 <div className={styles.imgTestimonialQuote}>
                   <span className={styles.imgTestimonialQuoteIcon}>&ldquo;</span>
-                  I will say that Trade Pulse Traders Institute was a great investment.
-                  <span style={{ alignSelf: 'flex-end' }} className={styles.imgTestimonialQuoteIcon}>&rdquo;</span>
+                  Before joining, I struggled with emotional trading and blowing accounts. The 1-on-1 coaching at the institute gave me a concrete rule-based system. I just passed my first ₹80L prop firm challenge thanks to their guidance.
+                  <span className={styles.imgTestimonialQuoteIcon}>&rdquo;</span>
                 </div>
-                <div className={styles.imgTestimonialName}>Beatriz P.</div>
+                <div className={styles.imgTestimonialName}>Neha Kapoor</div>
               </div>
             </div>
           </div>
@@ -234,8 +234,8 @@ export default function Home() {
             <div className={styles.horizontalPromoLeft}>
               <p style={{ color: "var(--text-secondary)", fontSize: "14px", fontWeight: "700", marginBottom: "8px", textTransform: "uppercase" }}>Get Our</p>
               <h2 className={styles.promoTitle} style={{ fontSize: "36px", marginBottom: "8px" }}><span className="text-gradient">Trade Pulse</span> Traders Institute</h2>
-              <p style={{ color: "#fff", fontSize: "20px", fontWeight: "600", marginBottom: "16px" }}>MEMBER PORTAL</p>
-              <p style={{ color: "var(--text-secondary)", fontSize: "14px", marginBottom: "32px" }}>Free access, just for attending</p>
+              <p style={{ color: "#fff", fontSize: "20px", fontWeight: "600", marginBottom: "16px" }}>TRADING FLOOR ACCESS</p>
+              <p style={{ color: "var(--text-secondary)", fontSize: "14px", marginBottom: "32px" }}>Free access to our campus, just for attending</p>
               <GlowButton href="#workshops" className={styles.pulseGlowAnim}>Get Started Now</GlowButton>
             </div>
             <div className={styles.horizontalPromoRight}>
@@ -291,7 +291,7 @@ export default function Home() {
               <span className="text-gradient">Transparency</span> Is Everything
             </h2>
             <p className={styles.transparencySubtitle}>
-              Every trade we take is shown inside the group along with a broker confirmation. This allows you to see that we really do what we say we do. Openness is a principle we uphold to the highest standard.
+              Every trade we take is showcased live on our trading floor screens and inside our student group along with a broker confirmation. This allows you to see that we really do what we say we do. Openness is a principle we uphold to the highest standard.
             </p>
           </div>
           
@@ -307,14 +307,14 @@ export default function Home() {
               </div>
               <h3 className={styles.transparencyCardTitle}><span className="text-gradient">Team</span> Trades</h3>
               <p className={styles.transparencyCardText}>
-                Every team trade is shared inside the Team Trades channel on Discord, giving you full transparency into every trade we're executing. You'll see the trades we take in real time, complete with markups, analysis, and broker screenshots. You can understand the narrative behind each move. Whether it's a win, break-even, or loss, it's all there. We believe in showing the full picture, because openness and honesty aren't just values, they're the standard we hold ourselves to.
+                Every team trade is discussed on our trading floor and shared inside the Team Trades channel on Discord, giving you full transparency into every trade we're executing. You'll see the trades we take in real time, complete with markups, analysis, and broker screenshots. You can understand the narrative behind each move. Whether it's a win, break-even, or loss, it's all there. We believe in showing the full picture, because openness and honesty aren't just values, they're the standard we hold ourselves to.
               </p>
             </div>
             
             <div className={styles.transparencyPhoneCol}>
               <div className={styles.phoneGlow}></div>
               <div className={styles.phoneWrapper}>
-                <Image src="/discord_trade_screenshot.png" alt="Discord Trading Post" fill style={{ objectFit: 'cover', objectPosition: 'top' }} className={styles.floatAnim} />
+                <Image src="/discord_trade_screenshot2.png" alt="Discord Trading Post" fill style={{ objectFit: 'cover', objectPosition: 'top' }} className={styles.floatAnim} />
               </div>
             </div>
           </div>
@@ -335,10 +335,10 @@ export default function Home() {
               <div className={styles.pathImageWrapper}>
                 <Image src="/bento_chart.png" alt="Live Trading Sessions" fill style={{ objectFit: 'cover' }} />
               </div>
-              <h3 className={styles.pathCardTitle}><span className="text-gradient">Live</span> Trading Sessions</h3>
-              <p className={styles.pathCardSubtitle}>Trade the markets live with the Envision Team</p>
+              <h3 className={styles.pathCardTitle}><span className="text-gradient">In-Person</span> Trading Floor</h3>
+              <p className={styles.pathCardSubtitle}>Trade the markets live at our campus</p>
               <p className={styles.pathCardText}>
-                Every week we host a live trading session where you will be able to tape-read and execute live with us. You'll gain a front-row seat to our thinking process, real-time decision-making and trade management.
+                Every week we host in-person trading sessions at our institute where you will be able to tape-read and execute live with our instructors on the trading floor. You'll gain a front-row seat to our thinking process, real-time decision-making and trade management.
               </p>
               <p className={styles.pathCardText}>
                 Watch, observe and ask questions. This is an opportunity for you to drastically speed up your learning curve, by watching what we're doing and how we're doing it.
@@ -364,9 +364,9 @@ export default function Home() {
                 <Image src="/bento_mentorship.png" alt="1-1 Coaching & Personal Mentorship" fill style={{ objectFit: 'cover' }} />
               </div>
               <h3 className={styles.pathCardTitle}><span className="text-gradient">1-1 Coaching</span> & Personal Mentorship</h3>
-              <p className={styles.pathCardSubtitle}>Direct Feedback to Fast-Track Your Growth</p>
+              <p className={styles.pathCardSubtitle}>Direct In-Person Feedback to Fast-Track Your Growth</p>
               <p className={styles.pathCardText}>
-                Get private 1-1 coaching with Michael and the Envision Team to fine-tune your strategy, build consistency, and break through mental or technical barriers holding you back. This is for traders who are serious about levelling up and committed to the journey ahead.
+                Get private 1-1 in-person coaching at our campus with our expert instructors to fine-tune your strategy, build consistency, and break through mental or technical barriers holding you back. This is for traders who are serious about levelling up and committed to the journey ahead.
               </p>
               <p className={styles.pathCardText}>
                 Spaces are extremely limited. Fill out the application form on the store page.
@@ -438,7 +438,7 @@ export default function Home() {
               </p>
               <ul className={styles.aboutList}>
                 <li>✔ Over $50M+ in collective funded capital</li>
-                <li>✔ 15,000+ Students Worldwide</li>
+                <li>✔ 15,000+ Students Trained at our Institute</li>
                 <li>✔ 94% Prop Firm Pass Rate for Mentorship Students</li>
               </ul>
               <div style={{ marginTop: '32px' }}>
@@ -481,9 +481,9 @@ export default function Home() {
         <section id="workshops" className={styles.workshopSection}>
           <div className={styles.workshopOverlay}></div>
           <div className={styles.workshopContent}>
-            <h2 className={styles.workshopTitle}>World-Class Workshops & <span className="text-gradient">Live Trading</span> Sessions</h2>
+            <h2 className={styles.workshopTitle}>World-Class Workshops & <span className="text-gradient">In-Person</span> Trading Sessions</h2>
             <p className={styles.workshopSubtitle}>
-              Get First Access to our World-Class Workshops & Live Trading Sessions led by the Envision Team. These are designed to test your ability, assist you in your learning and make you a more competent trader.
+              Get First Access to our World-Class Workshops & In-Person Trading Sessions at our campus led by our expert team. These are designed to test your ability, assist you in your learning and make you a more competent trader.
             </p>
             <GlowButton href="#contact" className={styles.pulseGlowAnim}>Join Now</GlowButton>
           </div>
@@ -536,7 +536,7 @@ export default function Home() {
                 <div className={styles.mentorshipTitles}>
                   <h3 className={styles.mentorshipCardTitle}><span className="text-gradient">ASCEND</span> VANGUARD</h3>
                   <p className={styles.mentorshipCardSubtitle}>Execution & Performance Development</p>
-                  <p className={styles.mentorshipCardDuration}>Monthly Subscription</p>
+                  <p className={styles.mentorshipCardDuration}>Monthly Campus Access</p>
                 </div>
               </div>
               <div className={styles.mentorshipPriceArea}>
@@ -595,8 +595,8 @@ export default function Home() {
                 </div>
                 <div className={styles.mentorshipTitles}>
                   <h3 className={styles.mentorshipCardTitle}><span className="text-gradient">ASCEND</span> ELITE</h3>
-                  <p className={`${styles.mentorshipCardSubtitle} ${styles.eliteSubtitle}`}>Private 1-on-1 Mentorship & Direct Advisory</p>
-                  <p className={styles.mentorshipCardDuration}>1 Year Private Access</p>
+                  <p className={`${styles.mentorshipCardSubtitle} ${styles.eliteSubtitle}`}>Private 1-on-1 In-Person Mentorship & Direct Advisory</p>
+                  <p className={styles.mentorshipCardDuration}>1 Year Private Campus Access</p>
                 </div>
               </div>
               <div className={styles.mentorshipPriceArea}>
