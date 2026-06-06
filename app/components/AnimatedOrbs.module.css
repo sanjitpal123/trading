@@ -1,0 +1,53 @@
+.container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 2; /* Sits above the dark overlay (0, 1) but below content (10) */
+  pointer-events: none;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.4;
+  mix-blend-mode: screen;
+}
+
+[data-theme='light'] .orb {
+  mix-blend-mode: multiply;
+  opacity: 0.3;
+}
+
+.orb1 {
+  width: 400px;
+  height: 400px;
+  background: var(--accent-primary);
+  top: -10%;
+  left: -10%;
+}
+
+.orb2 {
+  width: 500px;
+  height: 500px;
+  background: var(--accent-secondary);
+  bottom: -20%;
+  right: -10%;
+}
+
+.orb3 {
+  width: 300px;
+  height: 300px;
+  background: #3b82f6;
+  top: 40%;
+  left: 40%;
+}
+
+@media (max-width: 768px) {
+  .orb {
+    filter: blur(60px);
+  }
+  .orb1 { width: 250px; height: 250px; }
+  .orb2 { width: 300px; height: 300px; }
+  .orb3 { width: 200px; height: 200px; }
+}

@@ -1,0 +1,5 @@
+
+/* Enforce White Headings */
+.heroTitle, .educationCenterTitle, .educationSubtitle, .imgTestimonialsTitle, .promoTitle, .transparencyTitle, .transparencyCardTitle, .pathTitle, .pathCardTitle, .companyTitle, .companyCardTitle, .sectionTitle, .coreStrategyTitle, .coreStrategyBottomTitle, .workshopTitle, .mentorshipCardTitle, .formTitleText {
+  color: #fff !important;
+}

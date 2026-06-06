@@ -1,0 +1,70 @@
+.glowBtn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  border-radius: 9999px;
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 30px var(--accent-glow);
+  width: max-content;
+  z-index: 1;
+}
+
+.glowBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px var(--accent-glow);
+}
+
+.glowBtn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background-color: var(--bg-secondary);
+  border-radius: 9999px;
+  z-index: -1;
+  transition: background-color 0.2s ease;
+}
+
+.glowBtn:hover::before {
+  background-color: var(--bg-primary);
+}
+
+.glowElement {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    transparent 0deg,
+    var(--accent-primary) 180deg,
+    transparent 360deg
+  );
+  transform-origin: 0 0;
+  animation: rotate 4s linear infinite;
+  z-index: -2;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.btnContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

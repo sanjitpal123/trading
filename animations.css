@@ -1,0 +1,93 @@
+
+/* ==============================================
+   GOADSLIVE INSPIRED ANIMATIONS & SHAPES
+   ============================================== */
+
+/* Float Animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.floatAnim {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Shine Move Animation (Glossy Premium Look) */
+@keyframes shineMove {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+.shineMoveAnim {
+  position: relative;
+  overflow: hidden;
+}
+
+.shineMoveAnim::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-20deg);
+  animation: shineMove 3s infinite linear;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Pulse Glow Animation */
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0 0 rgba(var(--accent-primary-rgb, 0, 255, 128), 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(var(--accent-primary-rgb, 0, 255, 128), 0); }
+  100% { box-shadow: 0 0 0 0 rgba(var(--accent-primary-rgb, 0, 255, 128), 0); }
+}
+
+.pulseGlowAnim {
+  animation: pulseGlow 2s infinite;
+}
+
+/* Ripple Animation (Concentric Rings) */
+@keyframes ripple {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+.rippleAnim {
+  position: relative;
+}
+
+.rippleAnim::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-primary);
+  animation: ripple 2s infinite ease-out;
+  pointer-events: none;
+}
+
+/* Organic Shape dividers inspired by GoAdsLive */
+.curvedTopShape {
+  clip-path: ellipse(150% 100% at 50% 100%);
+  border-top-left-radius: 50% 10%;
+  border-top-right-radius: 50% 10%;
+}
+
+.curvedBottomShape {
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 10%;
+}
+
+.roundedCardShape {
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(20,20,20,0.4);
+  backdrop-filter: blur(10px);
+}
