@@ -27,7 +27,7 @@ export default function AnimatedBackground() {
         this.size = Math.random() * 2 + 0.1;
         this.speedX = Math.random() * 1 - 0.5;
         this.speedY = Math.random() * 1 - 0.5;
-        this.color = `rgba(6, 182, 212, ${Math.random() * 0.5 + 0.1})`; // Cyan shades
+        this.color = `rgba(234, 179, 8, ${Math.random() * 0.5 + 0.1})`; // Golden shades
       }
       update() {
         this.x += this.speedX;
@@ -86,7 +86,7 @@ export default function AnimatedBackground() {
 
           if (distance < 150) {
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(139, 92, 246, ${0.2 - distance / 150})`; // Purple connecting lines
+            ctx.strokeStyle = `rgba(202, 138, 4, ${0.2 - distance / 150})`; // Golden connecting lines
             ctx.lineWidth = 1;
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);

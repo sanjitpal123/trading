@@ -164,31 +164,31 @@ export default function Home() {
           <div className={styles.imgTestimonialsGrid}>
             <div className={styles.imgTestimonialCard}>
               <div className={styles.imgTestimonialBg}>
-                <Image src="/test_arjun.png" alt="Arjun M." fill style={{ objectFit: 'cover', objectPosition: 'top center' }} />
+                <Image src="/test_indian_4.png" alt="Nitin K." fill style={{ objectFit: 'cover', objectPosition: 'top center' }} />
               </div>
               <div className={styles.imgTestimonialOverlay}></div>
               <div className={styles.imgTestimonialContent}>
                 <div className={styles.imgTestimonialQuote}>
                   <span className={styles.imgTestimonialQuoteIcon}>&ldquo;</span>
-                  Trade Pulse Traders Institute completely changed my approach to the markets. The in-person mentorship on the trading floor helped me understand institutional order flow in real time. I've been consistently profitable for 6 months now.
+                  TRADE PLUS IS ONE OF MOST EXCELLENT TRADING INSTITUTION RUN BY DR.SUPRATIM GHOSH.I HAVE IMPROVED A LOT FROM SIR'S STRATEGY and his experience and logic.first learn and then Earn.
                   <span className={styles.imgTestimonialQuoteIcon}>&rdquo;</span>
                 </div>
-                <div className={styles.imgTestimonialName}>Arjun Mehta</div>
+                <div className={styles.imgTestimonialName}>Nitin Keshwani</div>
               </div>
             </div>
             
             <div className={styles.imgTestimonialCard}>
               <div className={styles.imgTestimonialBg}>
-                <Image src="/test_priya.png" alt="Priya S." fill style={{ objectFit: 'cover', objectPosition: 'top center' }} />
+                <Image src="/test_indian_1.png" alt="Bishal D." fill style={{ objectFit: 'cover', objectPosition: 'top center' }} />
               </div>
               <div className={styles.imgTestimonialOverlay}></div>
               <div className={styles.imgTestimonialContent}>
                 <div className={styles.imgTestimonialQuote}>
                   <span className={styles.imgTestimonialQuoteIcon}>&ldquo;</span>
-                  The structure of the courses is phenomenal. Instead of just teaching random strategies, they focus on risk management and psychology. The physical classroom environment makes a huge difference in learning discipline.
+                  Mind blowing experience at Trade Pulse learned a lot from Supratim sir he is superb he is very friendly and supportive. before joining Trade Pulse i made some losses but after joining with sir my loses are very limited and i am in a profitable stage right now and he gave me the confidence how to take trade without fear soo Over all my experience is outstanding
                   <span className={styles.imgTestimonialQuoteIcon}>&rdquo;</span>
                 </div>
-                <div className={styles.imgTestimonialName}>Priya Sharma</div>
+                <div className={styles.imgTestimonialName}>Bishal Das</div>
               </div>
             </div>
             
@@ -200,32 +200,36 @@ export default function Home() {
               <div className={styles.imgTestimonialContent}>
                 <div className={styles.imgTestimonialQuote}>
                   <span className={styles.imgTestimonialQuoteIcon}>&ldquo;</span>
-                  Investing in myself through Trade Pulse Traders Institute was the best decision I've made. The live trading sessions at the campus allowed me to see exactly how professionals navigate volatile markets, eliminating all my guesswork.
+                  Hi everyone .Attended the trader conclave for 5 day wef 23 May 2026.Its really an amazing eyeopener for all of us .The mentors Dr Supratim is really an wizard He really understand problem of every individual so closely and gives tailor made solution
                   <span className={styles.imgTestimonialQuoteIcon}>&rdquo;</span>
                 </div>
-                <div className={styles.imgTestimonialName}>Rohan Desai</div>
+                <div className={styles.imgTestimonialName}>Chakradhar Sahoo</div>
               </div>
             </div>
             
             <div className={styles.imgTestimonialCard}>
               <div className={styles.imgTestimonialBg}>
-                <Image src="/test_neha.png" alt="Neha K." fill style={{ objectFit: 'cover', objectPosition: 'top center' }} />
+                <Image src="/test_indian_2.png" alt="Debabrata S." fill style={{ objectFit: 'cover', objectPosition: 'top center' }} />
               </div>
               <div className={styles.imgTestimonialOverlay}></div>
               <div className={styles.imgTestimonialContent}>
                 <div className={styles.imgTestimonialQuote}>
                   <span className={styles.imgTestimonialQuoteIcon}>&ldquo;</span>
-                  Before joining, I struggled with emotional trading and blowing accounts. The 1-on-1 coaching at the institute gave me a concrete rule-based system. I just passed my first ₹80L prop firm challenge thanks to their guidance.
+                  Enjoying as a pro trader with decipline Thanks to My Mentor Dr.Suprratim Sir .Realy simple strategy make me as chalte phirte ATM . Definately one day you will be a financial freedom after learning from My Mentor's strategy. Jay Jagannath 🙏🙏🙏
                   <span className={styles.imgTestimonialQuoteIcon}>&rdquo;</span>
                 </div>
-                <div className={styles.imgTestimonialName}>Neha Kapoor</div>
+                <div className={styles.imgTestimonialName}>Debabrata Sahu</div>
               </div>
             </div>
           </div>
-
-          <div className={styles.videoSliderWrapper}>
-            <VideoReviewsSlider />
+          
+          <div style={{ textAlign: 'center', marginTop: '40px', marginBottom: '40px' }}>
+            <GlowButton href="https://www.google.com/maps/place/TRADE+PULSE/@22.5729837,88.4303058,17z/data=!4m8!3m7!1s0x3a02753815cd4d29:0x727a891dcd94364!8m2!3d22.5729837!4d88.4303058!9m1!1b1!16s%2Fg%2F11z74_r7nf!5m1!1e1!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">View More Reviews</GlowButton>
           </div>
+
+          {/* <div className={styles.videoSliderWrapper}>
+            <VideoReviewsSlider />
+          </div> */}
         </section>
 
         {/* Horizontal Promo Banner */}
