@@ -122,6 +122,30 @@ export default function Home() {
           </Marquee>
         </div>
 
+        {/* About Us Section */}
+        <section className={styles.aboutSection}>
+          <div className={styles.aboutGrid}>
+            <div className={styles.aboutContent}>
+              <h2 className={styles.sectionTitle}>Built by Traders, <br/><span className="text-gradient">for Traders</span></h2>
+              <p className={styles.sectionSubtitle} style={{ textAlign: 'left', marginBottom: '24px' }}>
+                We were tired of the "gurus" selling dreams without execution. Trade Pulse Traders Institute was founded by a collective of prop-firm funded traders with over a decade of institutional experience.
+              </p>
+              <ul className={styles.aboutList}>
+                <li>✔ Over $50M+ in collective funded capital</li>
+                <li>✔ 15,000+ Students Trained at our Institute</li>
+                <li>✔ 94% Prop Firm Pass Rate for Mentorship Students</li>
+              </ul>
+              <div style={{ marginTop: '32px' }}>
+
+              </div>
+            </div>
+            <div className={styles.aboutImageWrapper}>
+              <Image src="/owner.png" alt="Owner" fill style={{ objectFit: 'contain', objectPosition: 'bottom', borderRadius: '24px' }} />
+              <div className={styles.imageOverlay}></div>
+            </div>
+          </div>
+        </section>
+
         {/* Education Center Section */}
         <section id="education" className={styles.educationCenterSection}>
           <h2 className={styles.educationCenterTitle}>Your <span className="text-gradient">Education</span> Center</h2>
@@ -379,106 +403,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Our Company Section */}
-        <section className={styles.companySection}>
-          <div className={styles.companyNav}>
-            <div 
-              className={`${styles.companyNavItem} ${activeCompanyTab === 'company' ? styles.companyNavItemActive : ''}`}
-              onClick={() => setActiveCompanyTab('company')}
-            >Our Company</div>
-            <div 
-              className={`${styles.companyNavItem} ${activeCompanyTab === 'perspectives' ? styles.companyNavItemActive : ''}`}
-              onClick={() => setActiveCompanyTab('perspectives')}
-            >Our Perspectives</div>
-            <div 
-              className={`${styles.companyNavItem} ${activeCompanyTab === 'commitment' ? styles.companyNavItemActive : ''}`}
-              onClick={() => setActiveCompanyTab('commitment')}
-            >Relentless Commitment</div>
-            <div 
-              className={`${styles.companyNavItem} ${activeCompanyTab === 'research' ? styles.companyNavItemActive : ''}`}
-              onClick={() => setActiveCompanyTab('research')}
-            >Our Research Center</div>
-          </div>
-          
-          <div className={styles.companyContentArea}>
-            <h2 className={styles.companyTitle}>{companyTabData[activeCompanyTab].title}</h2>
-            <p className={styles.companyText}>
-              {companyTabData[activeCompanyTab].text}
-            </p>
-          </div>
-          
-          <div className={styles.companyCardsWrapper}>
-            <div className={styles.companyCard}>
-              <div className={styles.companyCardIcon}>
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
-              </div>
-              <h3 className={styles.companyCardTitle}><span className="text-gradient">Awards</span></h3>
-              <div className={styles.companyCardSubtitle}>Recent Awards</div>
-              <p className={styles.companyCardText}>
-                Trade Pulse Traders Institute has been recognized for excellence in quality of trader education and service to the community.
-              </p>
-            </div>
-            
-            <div className={styles.companyCard}>
-              <div className={styles.companyCardIcon}>
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-              </div>
-              <h3 className={styles.companyCardTitle}><span className="text-gradient">Relentless</span> Commitment</h3>
-              <div className={styles.companyCardSubtitle}>Our Top Priority is Our Students</div>
-              <p className={styles.companyCardText}>
-                Trade Pulse Traders Institute invests relentlessly in our education, services, products, technologies, support and community.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* About Us Section */}
-        <section className={styles.aboutSection}>
-          <div className={styles.aboutGrid}>
-            <div className={styles.aboutContent}>
-              <h2 className={styles.sectionTitle}>Built by Traders, <br/><span className="text-gradient">for Traders</span></h2>
-              <p className={styles.sectionSubtitle} style={{ textAlign: 'left', marginBottom: '24px' }}>
-                We were tired of the "gurus" selling dreams without execution. Trade Pulse Traders Institute was founded by a collective of prop-firm funded traders with over a decade of institutional experience.
-              </p>
-              <ul className={styles.aboutList}>
-                <li>✔ Over $50M+ in collective funded capital</li>
-                <li>✔ 15,000+ Students Trained at our Institute</li>
-                <li>✔ 94% Prop Firm Pass Rate for Mentorship Students</li>
-              </ul>
-              <div style={{ marginTop: '32px' }}>
-                <GlowButton href="#reviews">Meet the Team</GlowButton>
-              </div>
-            </div>
-            <div className={styles.aboutImageWrapper}>
-              <Image src="/about_team.png" alt="Trading Floor" fill style={{ objectFit: 'cover', borderRadius: '24px' }} />
-              <div className={styles.imageOverlay}></div>
-            </div>
-          </div>
-        </section>
-
-
-        {/* Core Strategy Section */}
-        <section id="strategy" className={styles.coreStrategySection}>
-          <div className={styles.coreStrategyTop}>
-            <div className={styles.coreStrategyIconCol}>
-              <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-              <div className={styles.coreStrategyIconLabel}>RULES</div>
-            </div>
-            <div className={styles.coreStrategyContent}>
-              <h2 className={styles.coreStrategyTitle}><span className="text-gradient">CORE STRATEGY</span> | PROPRIETARY METHODOLOGY</h2>
-              <p className={styles.coreStrategyText}>
-                Learn the rules of our proprietary market timing methodology to take advantage of volatility. Honed over more than two decades with over 60 talented instructors and serving 85,000 students with lifelong education. Learn and apply Core Strategy which is integrated throughout all aspects of your educational experience, providing a step-by-step set of rules that can be used with all styles of trading, and in a variety of markets whether you are trading stocks, futures, options, or foreign exchange. Most people fear volatility. We teach our students how to take advantage of it.
-              </p>
-            </div>
-          </div>
-          <div className={styles.coreStrategyBottom}>
-            <h3 className={styles.coreStrategyBottomTitle}><span className="text-gradient">DISCIPLINE</span></h3>
-            <p className={styles.coreStrategyQuote}>
-              "As a martial arts instructor for over 20 years, I appreciate discipline. It's so freeing to know that with my trading rules, I can be in the markets whether they go up, down or sideways."
-            </p>
-            <div className={styles.coreStrategyAuthor}>Matt S, Student</div>
-          </div>
-        </section>
 
         {/* The Trending Standard Section */}
         {/* Workshop Section */}
@@ -496,129 +420,64 @@ export default function Home() {
         {/* Mentorship Paths Section */}
         <section id="mentorship" className={styles.mentorshipSection}>
           <div className={styles.sectionHeaderCentered}>
-            <h2 className={styles.sectionTitle}>Mentorship <span className="text-gradient">Paths.</span></h2>
-            <p className={styles.sectionSubtitle}>Four structured paths — from foundational skill-building to private, one-on-one mentorship.</p>
+            <h2 className={styles.sectionTitle}>Chakravyuh <span className="text-gradient">Programs.</span></h2>
+            <p className={styles.sectionSubtitle}>Two structured paths — from a complete trading system to an intensive 1-year mentorship.</p>
           </div>
           
           <div className={styles.mentorshipGrid}>
-            {/* Basecamp */}
+            {/* Chakravyuh 1.0 */}
             <div className={`${styles.mentorshipCard} ${styles.shineMoveAnim}`}>
               <div className={styles.mentorshipHeader}>
                 <div className={styles.mentorshipIconWrapper}>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
                 </div>
                 <div className={styles.mentorshipTitles}>
-                  <h3 className={styles.mentorshipCardTitle}><span className="text-gradient">ASCEND</span> BASECAMP</h3>
-                  <p className={styles.mentorshipCardSubtitle}>Structured Trading Foundation</p>
-                  <p className={styles.mentorshipCardDuration}>8 Weeks</p>
+                  <h3 className={styles.mentorshipCardTitle}><span className="text-gradient">CHAKRAVYUH</span> 1.0</h3>
+                  <p className={styles.mentorshipCardSubtitle}>5 Part Complete Trading System</p>
+                  <p className={styles.mentorshipCardDuration}>Comprehensive Foundation</p>
                 </div>
               </div>
               <div className={styles.mentorshipPriceArea}>
-                <div className={styles.mentorshipOriginalPrice}>
-                  <span className={styles.strikethrough}>₹11,990.00</span>
-                  <span className={styles.saveBadge}>SAVE 10%</span>
-                </div>
                 <div className={styles.mentorshipCurrentPrice}>
-                  ₹10,791.00 <span className={styles.currency}>INR</span>
+                  ₹29,932.00 <span className={styles.currency}>INR</span>
                 </div>
               </div>
               <ul className={styles.mentorshipFeatures}>
-                <li><span className={styles.checkIcon}>✓</span> Individuals entering trading who...</li>
-                <li><span className={styles.checkIcon}>✓</span> Traders overwhelmed by scattered...</li>
-                <li><span className={styles.checkIcon}>✓</span> Those who have spent time in the...</li>
-                <li className={styles.moreDetails}>And more details inside...</li>
+                <li><span className={styles.checkIcon}>1</span> <b>Basic:</b> Build a strong foundation</li>
+                <li><span className={styles.checkIcon}>2</span> <b>Analysis:</b> Learn to read the market</li>
+                <li><span className={styles.checkIcon}>3</span> <b>Strategy:</b> Develop winning strategies</li>
+                <li><span className={styles.checkIcon}>4</span> <b>Risk Management:</b> Protect your capital, trade with confidence</li>
+                <li><span className={styles.checkIcon}>5</span> <b>Trader's Psychology:</b> Master your mindset, master the market</li>
+                <li className={styles.moreDetails} style={{ fontStyle: 'italic', marginTop: '16px', color: 'var(--accent-primary)' }}>"We don't predict the market. We prepare for it."</li>
               </ul>
-              <GlowButton href="#contact">EXPLORE BASECAMP</GlowButton>
+              <GlowButton href="#contact">EXPLORE CHAKRAVYUH 1.0</GlowButton>
             </div>
             
-            {/* Vanguard */}
-            <div className={`${styles.mentorshipCard} ${styles.shineMoveAnim}`}>
-              <div className={styles.mentorshipHeader}>
-                <div className={styles.mentorshipIconWrapper}>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
-                </div>
-                <div className={styles.mentorshipTitles}>
-                  <h3 className={styles.mentorshipCardTitle}><span className="text-gradient">ASCEND</span> VANGUARD</h3>
-                  <p className={styles.mentorshipCardSubtitle}>Execution & Performance Development</p>
-                  <p className={styles.mentorshipCardDuration}>Monthly Campus Access</p>
-                </div>
-              </div>
-              <div className={styles.mentorshipPriceArea}>
-                <div className={styles.mentorshipOriginalPrice}>
-                  <span className={styles.strikethrough}>₹4,990.00</span>
-                  <span className={styles.saveBadge}>SAVE 10%</span>
-                </div>
-                <div className={styles.mentorshipCurrentPrice}>
-                  ₹4,491.00 <span className={styles.currency}>/ month INR</span>
-                </div>
-              </div>
-              <ul className={styles.mentorshipFeatures}>
-                <li><span className={styles.checkIcon}>✓</span> Traders who understand basic...</li>
-                <li><span className={styles.checkIcon}>✓</span> Individuals who have spent time in...</li>
-                <li><span className={styles.checkIcon}>✓</span> Traders facing challenges with...</li>
-                <li className={styles.moreDetails}>And more details inside...</li>
-              </ul>
-              <GlowButton href="#contact">EXPLORE VANGUARD</GlowButton>
-            </div>
-            
-            {/* Legacy */}
-            <div className={`${styles.mentorshipCard} ${styles.shineMoveAnim}`}>
-              <div className={styles.mentorshipHeader}>
-                <div className={styles.mentorshipIconWrapper}>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-                </div>
-                <div className={styles.mentorshipTitles}>
-                  <h3 className={styles.mentorshipCardTitle}><span className="text-gradient">ASCEND</span> LEGACY</h3>
-                  <p className={styles.mentorshipCardSubtitle}>Long-Term Investing & Portfolio development</p>
-                  <p className={styles.mentorshipCardDuration}>5-7 Weeks</p>
-                </div>
-              </div>
-              <div className={styles.mentorshipPriceArea}>
-                <div className={styles.mentorshipOriginalPrice}>
-                  <span className={styles.strikethrough}>₹8,790.00</span>
-                  <span className={styles.saveBadge}>SAVE 10%</span>
-                </div>
-                <div className={styles.mentorshipCurrentPrice}>
-                  ₹7,911.00 <span className={styles.currency}>INR</span>
-                </div>
-              </div>
-              <ul className={styles.mentorshipFeatures}>
-                <li><span className={styles.checkIcon}>✓</span> Individuals interested in long-term...</li>
-                <li><span className={styles.checkIcon}>✓</span> Investors looking to structure their...</li>
-                <li><span className={styles.checkIcon}>✓</span> Professionals who prefer strategic...</li>
-                <li className={styles.moreDetails}>And more details inside...</li>
-              </ul>
-              <GlowButton href="#contact">EXPLORE LEGACY</GlowButton>
-            </div>
-            
-            {/* Elite */}
+            {/* Chakravyuh 2.0 */}
             <div className={`${styles.mentorshipCard} ${styles.eliteCard} ${styles.shineMoveAnim}`}>
               <div className={styles.mentorshipHeader}>
                 <div className={`${styles.mentorshipIconWrapper} ${styles.eliteIcon}`}>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
                 </div>
                 <div className={styles.mentorshipTitles}>
-                  <h3 className={styles.mentorshipCardTitle}><span className="text-gradient">ASCEND</span> ELITE</h3>
-                  <p className={`${styles.mentorshipCardSubtitle} ${styles.eliteSubtitle}`}>Private 1-on-1 In-Person Mentorship & Direct Advisory</p>
-                  <p className={styles.mentorshipCardDuration}>1 Year Private Campus Access</p>
+                  <h3 className={styles.mentorshipCardTitle}><span className="text-gradient">OPTION CHAKRAVYUH</span> 2.0</h3>
+                  <p className={`${styles.mentorshipCardSubtitle} ${styles.eliteSubtitle}`}>1 Year Mentorship Program</p>
+                  <p className={styles.mentorshipCardDuration}>1 Year Intensive Program</p>
                 </div>
               </div>
               <div className={styles.mentorshipPriceArea}>
-                <div className={styles.mentorshipOriginalPrice}>
-                  <span className={styles.strikethrough}>₹31,090.00</span>
-                  <span className={styles.saveBadge}>SAVE 10%</span>
-                </div>
                 <div className={`${styles.mentorshipCurrentPrice} ${styles.elitePrice}`}>
-                  ₹27,981.00 <span className={styles.currency}>INR</span>
+                  ₹99,935.00 <span className={styles.currency}>INR</span>
                 </div>
               </div>
               <ul className={`${styles.mentorshipFeatures} ${styles.eliteFeatures}`}>
-                <li><span className={styles.checkIcon}>✓</span> Traders seeking personalized...</li>
-                <li><span className={styles.checkIcon}>✓</span> Individuals serious about...</li>
-                <li><span className={styles.checkIcon}>✓</span> Traders who want detailed feedback...</li>
-                <li className={styles.moreDetails}>And more details inside...</li>
+                <li><span className={styles.checkIcon}>✓</span> <b>Classes 5 Days/Week:</b> Market Session (Live) & Evening Strategy Session</li>
+                <li><span className={styles.checkIcon}>✓</span> <b>Offline Elite Meetup:</b> Every 2 Months</li>
+                <li><span className={styles.checkIcon}>✓</span> <b>Live Trading:</b> With big size capital after 3 months</li>
+                <li><span className={styles.checkIcon}>✓</span> <b>Exclusivity:</b> Designed for Serious Traders Only</li>
+                <li><span className={styles.checkIcon}>✓</span> <b>Only 30 Seats:</b> Mandatory Entrance Test</li>
               </ul>
-              <GlowButton href="#contact">APPLY FOR ELITE</GlowButton>
+              <GlowButton href="#contact">APPLY FOR CHAKRAVYUH 2.0</GlowButton>
             </div>
           </div>
         </section>
