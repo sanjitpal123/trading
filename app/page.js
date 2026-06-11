@@ -43,7 +43,7 @@ const testimonials = [
 const companyTabData = {
   company: {
     title: "Our Company",
-    text: <>Welcome to the heart of Trade Pulse Traders Institute—a behind the scenes look at the people, programs and perspectives that are the pulse of the company. We are glad you found us. Meet our amazing staff, instructors and students, check out their contributions, and get inspired. As you explore, you will see that we put love at the core of everything we do from helping our students become confident traders, to our inspirational instructors, our network of centers, our happy employees, the community, and beyond.<br/><br/>Together we are relentlessly committed to making a difference and enriching lives!</>
+    text: <>Welcome to the heart of Trade Pulse—a behind the scenes look at the people, programs and perspectives that are the pulse of the company. We are glad you found us. Meet our amazing staff, instructors and students, check out their contributions, and get inspired. As you explore, you will see that we put love at the core of everything we do from helping our students become confident traders, to our inspirational instructors, our network of centers, our happy employees, the community, and beyond.<br/><br/>Together we are relentlessly committed to making a difference and enriching lives!</>
   },
   perspectives: {
     title: "Our Perspectives",
@@ -55,7 +55,7 @@ const companyTabData = {
   },
   research: {
     title: "Our Research Center",
-    text: <>The Trade Pulse Traders Institute Research Center is the engine room of our strategies. Our team of quantitative analysts and seasoned traders constantly backtest new concepts, analyze market micro-structure, and develop proprietary indicators.<br/><br/>Members get exclusive access to our ongoing research, helping them stay ahead of the curve in an ever-evolving financial landscape.</>
+    text: <>The Trade Pulse Research Center is the engine room of our strategies. Our team of quantitative analysts and seasoned traders constantly backtest new concepts, analyze market micro-structure, and develop proprietary indicators.<br/><br/>Members get exclusive access to our ongoing research, helping them stay ahead of the curve in an ever-evolving financial landscape.</>
   }
 };
 
@@ -92,7 +92,7 @@ export default function Home() {
             
             <h1 className={styles.heroTitle}>
               Master the Markets with <br />
-              <span className="text-gradient">Trade Pulse Traders Institute</span>
+              <span className="text-gradient">Trade Pulse</span>
             </h1>
             
             <p className={styles.heroSubtitle}>
@@ -128,7 +128,7 @@ export default function Home() {
             <div className={styles.aboutContent}>
               <h2 className={styles.sectionTitle}>Built by Traders, <br/><span className="text-gradient">for Traders</span></h2>
               <p className={styles.sectionSubtitle} style={{ textAlign: 'left', marginBottom: '24px' }}>
-                We were tired of the "gurus" selling dreams without execution. Trade Pulse Traders Institute was founded by a collective of prop-firm funded traders with over a decade of institutional experience.
+                We were tired of the "gurus" selling dreams without execution. Trade Pulse was founded by a collective of prop-firm funded traders with over a decade of institutional experience.
               </p>
               <ul className={styles.aboutList}>
                 <li>✔ Over $50M+ in collective funded capital</li>
@@ -154,14 +154,14 @@ export default function Home() {
             <div className={styles.educationContent}>
               <h3 className={styles.educationSubtitle}><span className="text-gradient">Global</span> Territories</h3>
               <p className={styles.educationText}>
-                We invite you to join us for an upcoming in-person intro class at our campus. Our experienced instructors and staff are here to help you build skills and confidence as you progress in your financial education. As a Trade Pulse Traders Institute student, you'll become part of a community of traders and investors committed to excellence.
+                We invite you to join us for an upcoming in-person intro class at our campus. Our experienced instructors and staff are here to help you build skills and confidence as you progress in your financial education. As a Trade Pulse student, you'll become part of a community of traders and investors committed to excellence.
               </p>
               
               <div className={styles.educationContact}>
                 <div className={styles.educationAvatar}>
                   <Image src="/bento_mentorship.png" alt="Support" fill style={{ objectFit: 'cover' }} />
                 </div>
-                <span className={styles.educationPhone}>Phone: +91 8927578901</span>
+                <span className={styles.educationPhone}>Phone: +91 8927578901, +91 9422799531</span>
               </div>
               
               <GlowButton href="#workshops">Learn More</GlowButton>
@@ -172,7 +172,7 @@ export default function Home() {
                 width="100%" 
                 height="100%" 
                 src="https://www.youtube.com/embed/pNhswVTg28U" 
-                title="Trade Pulse Traders Institute Video" 
+                title="Trade Pulse Video" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowFullScreen
                 style={{ border: 'none', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
@@ -261,7 +261,7 @@ export default function Home() {
           <div className={styles.horizontalPromoBanner}>
             <div className={styles.horizontalPromoLeft}>
               <p style={{ color: "var(--text-secondary)", fontSize: "14px", fontWeight: "700", marginBottom: "8px", textTransform: "uppercase" }}>Get Our</p>
-              <h2 className={styles.promoTitle} style={{ fontSize: "36px", marginBottom: "8px" }}><span className="text-gradient">Trade Pulse</span> Traders Institute</h2>
+              <h2 className={styles.promoTitle} style={{ fontSize: "36px", marginBottom: "8px" }}><span className="text-gradient">Trade Pulse</span></h2>
               <p style={{ color: "#fff", fontSize: "20px", fontWeight: "600", marginBottom: "16px" }}>TRADING FLOOR ACCESS</p>
               <p style={{ color: "var(--text-secondary)", fontSize: "14px", marginBottom: "32px" }}>Free access to our campus, just for attending</p>
               <GlowButton href="#workshops" className={styles.pulseGlowAnim}>Get Started Now</GlowButton>
@@ -326,11 +326,8 @@ export default function Home() {
           <div className={styles.transparencyGrid}>
             <div className={styles.transparencyCard}>
               <div className={styles.transparencyImages}>
-                <div className={styles.transparencyImgWrapper}>
-                  <Image src="/discord_trade_screenshot_2.png" alt="Trade 1" fill style={{ objectFit: 'cover', objectPosition: 'top' }} className={styles.floatAnim} />
-                </div>
-                <div className={styles.transparencyImgWrapper}>
-                  <Image src="https://images.unsplash.com/photo-1640340434855-6084b1f4901c?auto=format&fit=crop&w=600&q=80" alt="Trade 2" fill style={{ objectFit: 'cover' }} className={styles.floatAnim} />
+                <div className={styles.transparencyImgWrapper} style={{ width: '100%' }}>
+                  <Image src="/newimg.JPG" alt="Team Trades" fill style={{ objectFit: 'cover', objectPosition: 'top' }} className={styles.floatAnim} />
                 </div>
               </div>
               <h3 className={styles.transparencyCardTitle}><span className="text-gradient">Team</span> Trades</h3>
@@ -361,7 +358,7 @@ export default function Home() {
           <div className={styles.pathGrid}>
             <div className={styles.pathCard}>
               <div className={styles.pathImageWrapper}>
-                <Image src="/bento_chart.png" alt="Live Trading Sessions" fill style={{ objectFit: 'cover' }} />
+                <Image src="/inpersonimg.JPG" alt="Live Trading Sessions" fill style={{ objectFit: 'cover' }} />
               </div>
               <h3 className={styles.pathCardTitle}><span className="text-gradient">In-Person</span> Trading Floor</h3>
               <p className={styles.pathCardSubtitle}>Trade the markets live at our campus</p>
@@ -375,7 +372,7 @@ export default function Home() {
             
             <div className={styles.pathCard}>
               <div className={styles.pathImageWrapper}>
-                <Image src="/bento_indicators.png" alt="12-Week Funding Accelerator" fill style={{ objectFit: 'cover' }} />
+                <Image src="/found.JPG" alt="12-Week Funding Accelerator" fill style={{ objectFit: 'cover' }} />
               </div>
               <h3 className={styles.pathCardTitle}><span className="text-gradient">12-Week</span> Funding Accelerator</h3>
               <p className={styles.pathCardSubtitle}>A Structured Roadmap to Get You Ready For Funding</p>
@@ -389,7 +386,7 @@ export default function Home() {
             
             <div className={styles.pathCard}>
               <div className={styles.pathImageWrapper}>
-                <Image src="/bento_mentorship.png" alt="1-1 Coaching & Personal Mentorship" fill style={{ objectFit: 'cover' }} />
+                <Image src="/onetoone.JPG" alt="1-1 Coaching & Personal Mentorship" fill style={{ objectFit: 'cover' }} />
               </div>
               <h3 className={styles.pathCardTitle}><span className="text-gradient">1-1 Coaching</span> & Personal Mentorship</h3>
               <p className={styles.pathCardSubtitle}>Direct In-Person Feedback to Fast-Track Your Growth</p>
@@ -443,12 +440,12 @@ export default function Home() {
                 </div>
               </div>
               <ul className={styles.mentorshipFeatures}>
-                <li><span className={styles.checkIcon}>1</span> <b>Basic:</b> Build a strong foundation</li>
-                <li><span className={styles.checkIcon}>2</span> <b>Analysis:</b> Learn to read the market</li>
-                <li><span className={styles.checkIcon}>3</span> <b>Strategy:</b> Develop winning strategies</li>
-                <li><span className={styles.checkIcon}>4</span> <b>Risk Management:</b> Protect your capital, trade with confidence</li>
-                <li><span className={styles.checkIcon}>5</span> <b>Trader's Psychology:</b> Master your mindset, master the market</li>
-                <li className={styles.moreDetails} style={{ fontStyle: 'italic', marginTop: '16px', color: 'var(--accent-primary)' }}>"We don't predict the market. We prepare for it."</li>
+                <li><span className={styles.checkIcon}>1</span> <span><b>Basic:</b> Build a strong foundation</span></li>
+                <li><span className={styles.checkIcon}>2</span> <span><b>Analysis:</b> Learn to read the market</span></li>
+                <li><span className={styles.checkIcon}>3</span> <span><b>Strategy:</b> Develop winning strategies</span></li>
+                <li><span className={styles.checkIcon}>4</span> <span><b>Risk Management:</b> Protect your capital, trade with confidence</span></li>
+                <li><span className={styles.checkIcon}>5</span> <span><b>Trader&apos;s Psychology:</b> Master your mindset, master the market</span></li>
+                <li className={styles.moreDetails} style={{ fontStyle: 'italic', marginTop: '16px', color: 'var(--accent-primary)' }}>&quot;We don&apos;t predict the market. We prepare for it.&quot;</li>
               </ul>
               <GlowButton href="#contact">EXPLORE CHAKRAVYUH 1.0</GlowButton>
             </div>
@@ -471,11 +468,11 @@ export default function Home() {
                 </div>
               </div>
               <ul className={`${styles.mentorshipFeatures} ${styles.eliteFeatures}`}>
-                <li><span className={styles.checkIcon}>✓</span> <b>Classes 5 Days/Week:</b> Market Session (Live) & Evening Strategy Session</li>
-                <li><span className={styles.checkIcon}>✓</span> <b>Offline Elite Meetup:</b> Every 2 Months</li>
-                <li><span className={styles.checkIcon}>✓</span> <b>Live Trading:</b> With big size capital after 3 months</li>
-                <li><span className={styles.checkIcon}>✓</span> <b>Exclusivity:</b> Designed for Serious Traders Only</li>
-                <li><span className={styles.checkIcon}>✓</span> <b>Only 30 Seats:</b> Mandatory Entrance Test</li>
+                <li><span className={styles.checkIcon}>✓</span> <span><b>Classes 5 Days/Week:</b> Market Session (Live) &amp; Evening Strategy Session</span></li>
+                <li><span className={styles.checkIcon}>✓</span> <span><b>Offline Elite Meetup:</b> Every 2 Months</span></li>
+                <li><span className={styles.checkIcon}>✓</span> <span><b>Live Trading:</b> With big size capital after 3 months</span></li>
+                <li><span className={styles.checkIcon}>✓</span> <span><b>Exclusivity:</b> Designed for Serious Traders Only</span></li>
+                <li><span className={styles.checkIcon}>✓</span> <span><b>Only 30 Seats:</b> Mandatory Entrance Test</span></li>
               </ul>
               <GlowButton href="#contact">APPLY FOR CHAKRAVYUH 2.0</GlowButton>
             </div>

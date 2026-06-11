@@ -3,8 +3,8 @@ import styles from './page.module.css';
 import AnimatedBackground from '../components/AnimatedBackground';
 
 export const metadata = {
-  title: 'Privacy Policy | Trade Pulse Traders Institute',
-  description: 'Privacy Policy for Trade Pulse Traders Institute',
+  title: 'Privacy Policy | Trade Pulse',
+  description: 'Privacy Policy for Trade Pulse',
 };
 
 export default function PrivacyPolicy() {
@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
                 1. Information We Collect
               </h2>
               <p className={styles.text}>
-                At Trade Pulse Traders Institute, we prioritize your privacy and are committed to protecting your personal data. We collect information that you voluntarily provide to us when you register for an account, express an interest in obtaining information about us or our products and services, or otherwise contact us.
+                At Trade Pulse, we prioritize your privacy and are committed to protecting your personal data. We collect information that you voluntarily provide to us when you register for an account, express an interest in obtaining information about us or our products and services, or otherwise contact us.
               </p>
               <ul className={styles.list}>
                 <li><strong>Personal Information:</strong> Name, email address, phone number, and billing information.</li>
@@ -85,7 +85,7 @@ export default function PrivacyPolicy() {
                 5. Contact Us
               </h2>
               <p className={styles.text}>
-                If you have questions or comments about this notice, you may email us at <strong>tradepulse14@gmail.com</strong> or contact us by phone at <strong>+91 8927578901</strong>.
+                If you have questions or comments about this notice, you may email us at <strong>tradepulse14@gmail.com</strong> or contact us by phone at <strong>+91 8927578901</strong> or <strong>+91 9422799531</strong>.
               </p>
             </section>
           </div>

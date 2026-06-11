@@ -58,8 +58,6 @@ export default function Header() {
             <Link href="#strategy" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>Strategy</Link>
             <Link href="#workshops" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>Workshops</Link>
             <Link href="#mentorship" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>Mentorship</Link>
-            <div className={styles.mobileNavDivider}></div>
-            <Link href="/login" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>Login</Link>
           </nav>
         </div>
       )}
