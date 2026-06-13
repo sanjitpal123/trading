@@ -6,27 +6,27 @@ import styles from "./VideoReviewsSlider.module.css";
 const videoReviews = [
   {
     id: 1,
-    name: "James T.",
-    role: "Funded Trader",
-    videoId: "dQw4w9WgXcQ", // Placeholder - swap later
+    name: "Trade Pulse Review",
+    role: "Student",
+    videoId: "hJoAkB5-fsA",
   },
   {
     id: 2,
-    name: "Sarah L.",
-    role: "Pro Member",
-    videoId: "jfKfPfyJRdk", // Placeholder
+    name: "Trade Pulse Review",
+    role: "Student",
+    videoId: "cloCFW44hGQ",
   },
   {
     id: 3,
-    name: "Michael R.",
-    role: "Bootcamp Graduate",
-    videoId: "tgbNymZ7vqY", // Placeholder
+    name: "Trade Pulse Review",
+    role: "Student",
+    videoId: "sLaiNb_RDfs",
   },
   {
     id: 4,
-    name: "Elena P.",
-    role: "Full-time Trader",
-    videoId: "ScMzIvxBSi4", // Placeholder
+    name: "Trade Pulse Review",
+    role: "Student",
+    videoId: "pNhswVTg28U",
   }
 ];
 

@@ -24,11 +24,11 @@ export default function Header() {
         </div>
         
         <nav className={styles.desktopNav}>
-          <Link href="#reviews" className={styles.navLink}>Reviews</Link>
           <Link href="#education" className={styles.navLink}>Education</Link>
-          <Link href="#strategy" className={styles.navLink}>Strategy</Link>
+          <Link href="#reviews" className={styles.navLink}>Reviews</Link>
           <Link href="#workshops" className={styles.navLink}>Workshops</Link>
-          <Link href="#mentorship" className={styles.navLink}>Mentorship</Link>
+          <Link href="#bonuses" className={styles.navLink}>Bonuses</Link>
+          <Link href="#contact" className={styles.navLink}>Contact</Link>
         </nav>
         
         <div className={styles.rightSection}>
@@ -53,11 +53,11 @@ export default function Header() {
       {mobileMenuOpen && (
         <div className={styles.mobileMenuOverlay}>
           <nav className={styles.mobileNav}>
-            <Link href="#reviews" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>Reviews</Link>
             <Link href="#education" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>Education</Link>
-            <Link href="#strategy" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>Strategy</Link>
+            <Link href="#reviews" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>Reviews</Link>
             <Link href="#workshops" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>Workshops</Link>
-            <Link href="#mentorship" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>Mentorship</Link>
+            <Link href="#bonuses" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>Bonuses</Link>
+            <Link href="#contact" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>Contact</Link>
           </nav>
         </div>
       )}
