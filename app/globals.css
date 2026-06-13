@@ -5,9 +5,9 @@
   --bg-tertiary: #1a1a1d;
   --text-primary: #f3f4f6;
   --text-secondary: #9ca3af;
-  --accent-primary: #eab308; /* Golden */
-  --accent-secondary: #ca8a04; /* Golden */
-  --accent-glow: rgba(234, 179, 8, 0.5);
+  --accent-primary: #D4AF37; /* Metallic Gold */
+  --accent-secondary: #B8860B; /* Dark Goldenrod */
+  --accent-glow: rgba(212, 175, 55, 0.5);
   --border-color: #27272a;
   
   --glass-bg: rgba(15, 15, 17, 0.6);
@@ -86,7 +86,7 @@ ul {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-secondary) 100%);
+  background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
