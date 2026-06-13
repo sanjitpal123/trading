@@ -125,7 +125,7 @@ export default function Home() {
         <section className={styles.builtBySection}>
           <div className={styles.builtByContainer}>
             <div className={styles.builtByContent}>
-              <h2 className={styles.builtByTitle}>Built by Traders,<br/>for <span style={{color: "#f59e0b"}}>Traders</span></h2>
+              <h2 className={styles.builtByTitle}>Built by Traders,<br/>for <a href="#mentorship" className="text-gradient" style={{textDecoration: 'none', cursor: 'pointer'}}>Traders</a></h2>
               <p className={styles.builtByText}>
                 We were tired of the &quot;gurus&quot; selling dreams without execution. 
                 Trade Pulse was founded by a collective of prop-firm funded traders 
@@ -138,7 +138,7 @@ export default function Home() {
               </ul>
             </div>
             <div className={styles.builtByImageWrapper}>
-              <Image src="/owner.png" alt="Mentor" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
+              <Image src="/owner.png" alt="Mentor" fill style={{ objectFit: 'cover', objectPosition: 'bottom center' }} />
             </div>
           </div>
         </section>

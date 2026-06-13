@@ -3195,3 +3195,15 @@
     margin-bottom: 40px !important;
   }
 }
+
+@media (max-width: 768px) {
+  .builtByContent {
+    padding: 20px 0 !important;
+  }
+  .builtByTitle {
+    font-size: 28px !important;
+  }
+  .builtByText {
+    font-size: 16px !important;
+  }
+}
