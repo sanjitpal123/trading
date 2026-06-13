@@ -70,7 +70,6 @@ export default function Home() {
       <main className={styles.main}>
         {/* Hero Section */}
         <section className={`${styles.hero} ${styles.curvedBottomShape}`}>
-          <FloatingCoins />
           
           <div className={styles.heroBgImage}>
             <Image src="/hero_bg.png" alt="Trading Background" fill style={{ objectFit: 'cover', opacity: 0.4 }} priority />
@@ -81,8 +80,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className={styles.heroContent}
-          >
+            className={styles.heroContent}>
             <div className={styles.badgeWrapper}>
               <span className={styles.heroBadge}>
                 <span className={styles.pulseDot}></span>
@@ -122,29 +120,29 @@ export default function Home() {
           </Marquee>
         </div>
 
-        {/* About Us Section */}
-        <section className={styles.aboutSection}>
-          <div className={styles.aboutGrid}>
-            <div className={styles.aboutContent}>
-              <h2 className={styles.sectionTitle}>Built by Traders, <br/><span className="text-gradient">for Traders</span></h2>
-              <p className={styles.sectionSubtitle} style={{ textAlign: 'left', marginBottom: '24px' }}>
-                We were tired of the "gurus" selling dreams without execution. Trade Pulse was founded by a collective of prop-firm funded traders with over a decade of institutional experience.
+        
+        {/* Built By Section */}
+        <section className={styles.builtBySection}>
+          <div className={styles.builtByContainer}>
+            <div className={styles.builtByContent}>
+              <h2 className={styles.builtByTitle}>Built by Traders,<br/>for <span style={{color: "#f59e0b"}}>Traders</span></h2>
+              <p className={styles.builtByText}>
+                We were tired of the &quot;gurus&quot; selling dreams without execution. 
+                Trade Pulse was founded by a collective of prop-firm funded traders 
+                with over a decade of institutional experience.
               </p>
-              <ul className={styles.aboutList}>
-                <li>✔ Over $50M+ in collective funded capital</li>
-                <li>✔ 15,000+ Students Trained at our Institute</li>
-                <li>✔ 94% Prop Firm Pass Rate for Mentorship Students</li>
+              <ul className={styles.builtByList}>
+                <li><i className="fa-solid fa-check" style={{color: "#fff", marginRight: "10px"}}></i> Over $50M+ in collective funded capital</li>
+                <li><i className="fa-solid fa-check" style={{color: "#fff", marginRight: "10px"}}></i> 15,000+ Students Trained at our Institute</li>
+                <li><i className="fa-solid fa-check" style={{color: "#fff", marginRight: "10px"}}></i> 94% Prop Firm Pass Rate for Mentorship Students</li>
               </ul>
-              <div style={{ marginTop: '32px' }}>
-
-              </div>
             </div>
-            <div className={styles.aboutImageWrapper}>
-              <Image src="/owner.png" alt="Owner" fill style={{ objectFit: 'contain', objectPosition: 'bottom', borderRadius: '24px' }} />
-              <div className={styles.imageOverlay}></div>
+            <div className={styles.builtByImageWrapper}>
+              <Image src="/owner.png" alt="Mentor" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
             </div>
           </div>
         </section>
+
 
         {/* Education Center Section */}
         <section id="education" className={styles.educationCenterSection}>
@@ -312,93 +310,7 @@ export default function Home() {
 
         {/* Path to Profitability Section */}
         
-        {/* Transparency Section */}
-        <section className={styles.transparencySection}>
-          <div className={styles.transparencyHeader}>
-            <h2 className={styles.transparencyTitle}>
-              <span className="text-gradient">Transparency</span> Is Everything
-            </h2>
-            <p className={styles.transparencySubtitle}>
-              Every trade we take is showcased live on our trading floor screens and inside our student group along with a broker confirmation. This allows you to see that we really do what we say we do. Openness is a principle we uphold to the highest standard.
-            </p>
-          </div>
-          
-          <div className={styles.transparencyGrid}>
-            <div className={styles.transparencyCard}>
-              <div className={styles.transparencyImages}>
-                <div className={styles.transparencyImgWrapper} style={{ width: '100%' }}>
-                  <Image src="/newimg.JPG" alt="Team Trades" fill style={{ objectFit: 'cover', objectPosition: 'top' }} className={styles.floatAnim} />
-                </div>
-              </div>
-              <h3 className={styles.transparencyCardTitle}><span className="text-gradient">Team</span> Trades</h3>
-              <p className={styles.transparencyCardText}>
-                Every team trade is discussed on our trading floor and shared inside the Team Trades channel on Discord, giving you full transparency into every trade we're executing. You'll see the trades we take in real time, complete with markups, analysis, and broker screenshots. You can understand the narrative behind each move. Whether it's a win, break-even, or loss, it's all there. We believe in showing the full picture, because openness and honesty aren't just values, they're the standard we hold ourselves to.
-              </p>
-            </div>
-            
-            <div className={styles.transparencyPhoneCol}>
-              <div className={styles.phoneGlow}></div>
-              <div className={styles.phoneWrapper}>
-                <Image src="/discord_trade_screenshot2.png" alt="Discord Trading Post" fill style={{ objectFit: 'cover', objectPosition: 'top' }} className={styles.floatAnim} />
-              </div>
-            </div>
-          </div>
-        </section>
 
-<section className={styles.pathSection}>
-          <div className={styles.pathHeader}>
-            <h2 className={styles.pathTitle}>
-              Your Path to Consistent Profitability <span className="text-gradient">Starts Here</span>
-            </h2>
-            <p className={styles.pathSubtitle}>
-              We Teach the Complete Framework to Turn Unprofitable Traders into Consistent Profitable Traders.
-            </p>
-          </div>
-          
-          <div className={styles.pathGrid}>
-            <div className={styles.pathCard}>
-              <div className={styles.pathImageWrapper}>
-                <Image src="/inpersonimg.JPG" alt="Live Trading Sessions" fill style={{ objectFit: 'cover' }} />
-              </div>
-              <h3 className={styles.pathCardTitle}><span className="text-gradient">In-Person</span> Trading Floor</h3>
-              <p className={styles.pathCardSubtitle}>Trade the markets live at our campus</p>
-              <p className={styles.pathCardText}>
-                Every week we host in-person trading sessions at our institute where you will be able to tape-read and execute live with our instructors on the trading floor. You'll gain a front-row seat to our thinking process, real-time decision-making and trade management.
-              </p>
-              <p className={styles.pathCardText}>
-                Watch, observe and ask questions. This is an opportunity for you to drastically speed up your learning curve, by watching what we're doing and how we're doing it.
-              </p>
-            </div>
-            
-            <div className={styles.pathCard}>
-              <div className={styles.pathImageWrapper}>
-                <Image src="/found.JPG" alt="12-Week Funding Accelerator" fill style={{ objectFit: 'cover' }} />
-              </div>
-              <h3 className={styles.pathCardTitle}><span className="text-gradient">12-Week</span> Funding Accelerator</h3>
-              <p className={styles.pathCardSubtitle}>A Structured Roadmap to Get You Ready For Funding</p>
-              <p className={styles.pathCardText}>
-                The 12-week accelerator is designed to take everything you've learnt in the core content and turn it into a clear path towards funding and consistency.
-              </p>
-              <p className={styles.pathCardText}>
-                Inside the program you'll gain access to an exclusive training program featuring further advanced concepts, helping you sharpen your understanding of price action, time and execution.
-              </p>
-            </div>
-            
-            <div className={styles.pathCard}>
-              <div className={styles.pathImageWrapper}>
-                <Image src="/onetoone.JPG" alt="1-1 Coaching & Personal Mentorship" fill style={{ objectFit: 'cover' }} />
-              </div>
-              <h3 className={styles.pathCardTitle}><span className="text-gradient">1-1 Coaching</span> & Personal Mentorship</h3>
-              <p className={styles.pathCardSubtitle}>Direct In-Person Feedback to Fast-Track Your Growth</p>
-              <p className={styles.pathCardText}>
-                Get private 1-1 in-person coaching at our campus with our expert instructors to fine-tune your strategy, build consistency, and break through mental or technical barriers holding you back. This is for traders who are serious about levelling up and committed to the journey ahead.
-              </p>
-              <p className={styles.pathCardText}>
-                Spaces are extremely limited. Fill out the application form on the store page.
-              </p>
-            </div>
-          </div>
-        </section>
 
 
         {/* The Trending Standard Section */}
@@ -479,7 +391,200 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Contact Section */}
+                {/* --- NEW SECTIONS --- */}
+        
+        {/* AI Tools Section */}
+        <section className={styles.aiToolsSection}>
+          <h3 className={styles.aiToolsTitle}>The AI tools & APIs that you will learn about in Our Trading & Investing Framework</h3>
+          <div className={styles.aiToolsGrid}>
+            <div className={styles.aiToolLogo}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              OpenAI
+            </div>
+            <div className={styles.aiToolLogo}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Perplexity
+            </div>
+            <div className={styles.aiToolLogo}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7z"></path></svg>
+              Gemini
+            </div>
+            <div className={styles.aiToolLogo}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              Meta
+            </div>
+            <div className={styles.aiToolLogo}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+              Claude
+            </div>
+          </div>
+        </section>
+
+        {/* Why Attend Section */}
+        <section className={styles.whyAttendSection}>
+          <div className={styles.sectionHeaderCentered}>
+            <h2 className={styles.sectionTitle}>WHY ATTEND THIS <span className="text-gradient">WORKSHOP?</span></h2>
+          </div>
+          <div className={styles.whyAttendGrid}>
+            <div className={styles.gradientCardBase}>
+              <div className={styles.whyCardIcon}><i className="fa-solid fa-robot"></i></div>
+              <div className={styles.whyCardText}>Get a comprehensive list of AI tools for trading, their functions and the best ways to use them</div>
+            </div>
+            <div className={styles.gradientCardBase}>
+              <div className={styles.whyCardIcon}><i className="fa-solid fa-chart-line"></i></div>
+              <div className={styles.whyCardText}>Learn to practically format data & train AI bots with your Trading Setup for stock analysis</div>
+            </div>
+            <div className={styles.gradientCardBase}>
+              <div className={styles.whyCardIcon}><i className="fa-solid fa-stopwatch"></i></div>
+              <div className={styles.whyCardText}>Learn to fully automate the Data collection, formatting & analysis loop to save your time</div>
+            </div>
+            <div className={styles.gradientCardBase}>
+              <div className={styles.whyCardIcon}><i className="fa-solid fa-bullseye"></i></div>
+              <div className={styles.whyCardText}>Setting Alerts on Telegram to notify you when the stock comes to your buying zones</div>
+            </div>
+            <div className={styles.gradientCardBase}>
+              <div className={styles.whyCardIcon}><i className="fa-solid fa-brain"></i></div>
+              <div className={styles.whyCardText}>Learn to manage multiple trades with emotional and psychological stability</div>
+            </div>
+            <div className={styles.gradientCardBase}>
+              <div className={styles.whyCardIcon}><i className="fa-solid fa-briefcase"></i></div>
+              <div className={styles.whyCardText}>Automating P&L Tracking and Journaling Process for Professional & structured Traders</div>
+            </div>
+          </div>
+          <GlowButton href="#contact">Become an AI Financial Analyst @ ₹499</GlowButton>
+        </section>
+
+        {/* Results Section */}
+        <section className={styles.resultsSection}>
+          <div className={styles.sectionHeaderCentered}>
+            <div style={{ color: "#f59e0b", letterSpacing: "2px", fontWeight: "700", marginBottom: "8px" }}>★★★★★</div>
+            <h2 className={styles.sectionTitle}>CHECK OUT <span className="text-gradient">OUR RESULTS...</span></h2>
+            <p className={styles.sectionSubtitle}>Here is how Trade Pulse AI Trading framework changes the game.</p>
+          </div>
+          
+          <div className={styles.resultsGrid}>
+            <div className={styles.resultCard}>
+              <div className={styles.resultIcon}><i className="fa-solid fa-microchip" style={{ color: "#10b981" }}></i></div>
+              <h3 className={styles.resultTitle}>Before learning AI framework for Stock Analysis</h3>
+              <p className={styles.resultText}>You have an unorganized approach and struggle with finding stocks, analyzing charts, and staying updated with news & fundamentals.</p>
+            </div>
+            <div className={styles.resultCard}>
+              <div className={styles.resultIcon}><i className="fa-solid fa-money-bill-trend-up" style={{ color: "#f59e0b" }}></i></div>
+              <h3 className={styles.resultTitle}>After learning AI in Trading</h3>
+              <p className={styles.resultText}>You have AI systems in place which scan sectors & stocks, automatically analyze their technicals & fundamentals and deliver ready reports!</p>
+            </div>
+            <div className={styles.resultCard}>
+              <div className={styles.resultIcon}><i className="fa-solid fa-rocket" style={{ color: "#f59e0b" }}></i></div>
+              <h3 className={styles.resultTitle}>Overall, <span className={styles.resultHighlight}>You Will Become an AI Empowered Trader...</span></h3>
+              <p className={styles.resultText}>Your trading gets organized, you execute with clarity, manage risks better, and ultimately improve your strike rate to become consistent.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* How AI Will Change Section */}
+        <section className={styles.aiChangeSection}>
+          <div className={styles.sectionHeaderCentered}>
+            <h2 className={styles.sectionTitle}>Here&apos;s How AI Will Change <span className="text-gradient">Investing & Trading Forever</span></h2>
+          </div>
+          <div className={styles.aiChangeList}>
+            <div className={styles.aiChangeCard}>
+              <h3 className={styles.aiChangeCardTitle}>Massive Time & Effort Reduction</h3>
+              <p className={styles.aiChangeCardText}>What used to take hours of manual scanning, chart reading, and fundamental analysis can now be done in seconds by training customized AI models, freeing you up to focus on execution.</p>
+            </div>
+            <div className={styles.aiChangeCard}>
+              <h3 className={styles.aiChangeCardTitle}>AI-Driven AI Powered Investing is The Future</h3>
+              <p className={styles.aiChangeCardText}>The Market is filled with Noise. AI filters out the irrelevant data and gives you exactly what you need to know for your strategy.</p>
+            </div>
+            <div className={styles.aiChangeCard}>
+              <h3 className={styles.aiChangeCardTitle}>Custom AI Assistant on your side</h3>
+              <p className={styles.aiChangeCardText}>Imagine having a financial analyst working for you 24/7. AI doesn&apos;t just scan; it understands your specific criteria and notifies you only when a high-probability setup occurs.</p>
+            </div>
+          </div>
+          <GlowButton href="#contact">Become an AI Financial Analyst @ ₹499</GlowButton>
+        </section>
+
+        {/* Bundle Section */}
+        <section className={styles.bundleSection}>
+          <div className={styles.bundleHighlight}>Get Trading & Investing in AI Bundle Now</div>
+          <h2 className={styles.sectionTitle}>Immediate Access to bonuses Worth <span style={{color: "#f59e0b", textDecoration: "line-through"}}>₹49,999</span><br/>Now only <span style={{color: "#10b981"}}>₹499</span></h2>
+          
+          <div className={styles.bundleGrid}>
+            <div className={styles.bundleCard}>
+              <div className={styles.bundleBadge}>Bonus 1</div>
+              <div className={styles.bundleCardIcon}><i className="fa-solid fa-arrow-trend-up"></i></div>
+              <h3 className={styles.bundleCardTitle}>Free Financial Literacy</h3>
+              <p className={styles.bundleCardText}>Learn to manage your personal finances and how to invest intelligently to compound your money over time.</p>
+            </div>
+            <div className={styles.bundleCard}>
+              <div className={styles.bundleBadge}>Bonus 2</div>
+              <div className={styles.bundleCardIcon}><i className="fa-solid fa-clipboard-list"></i></div>
+              <h3 className={styles.bundleCardTitle}>4 Steps Ultimate Guide on AI prompt writing Framework</h3>
+              <p className={styles.bundleCardText}>Get a step-by-step PDF guide with 200+ Prompts tailored specifically for stock analysis and algorithmic testing.</p>
+            </div>
+            <div className={styles.bundleCard}>
+              <div className={styles.bundleBadge}>Bonus 3</div>
+              <div className={styles.bundleCardIcon}><i className="fa-solid fa-link"></i></div>
+              <h3 className={styles.bundleCardTitle}>A Premium Excel Document of Data sources for Analysis</h3>
+              <p className={styles.bundleCardText}>Get the curated list of top data sources and API endpoints that professional quants use for analysis.</p>
+            </div>
+            <div className={styles.bundleCard}>
+              <div className={styles.bundleBadge}>Bonus 4</div>
+              <div className={styles.bundleCardIcon}><i className="fa-solid fa-wand-magic-sparkles"></i></div>
+              <h3 className={styles.bundleCardTitle}>AI For Beginners 2024: A Free learning Resource</h3>
+              <p className={styles.bundleCardText}>Start from zero. Everything you need to know about Generative AI, LLMs, and how to effectively use them.</p>
+            </div>
+          </div>
+          
+          <p style={{fontSize: "14px", color: "#cbd5e1", marginBottom: "20px"}}>Unlock Your Bonus worth Rs 49,999 Plus Recording of the Masterclass</p>
+          <GlowButton href="#contact">Register now to claim early bird pricing @ ₹499</GlowButton>
+        </section>
+
+        {/* Empower Section */}
+        <section className={styles.empowerSection}>
+          <div className={styles.sectionHeaderCentered}>
+            <h2 className={styles.sectionTitle} style={{fontSize: "24px", letterSpacing: "1px"}}>THIS WORKSHOP WILL EMPOWER YOU TO 👇</h2>
+          </div>
+          
+          <div className={styles.empowerGridTop}>
+            <div className={styles.empowerCard}>
+              <div className={styles.empowerIcon}><i className="fa-solid fa-check"></i></div>
+              <div className={styles.empowerText}>Learn exactly how to interact with AI models for Trading</div>
+            </div>
+            <div className={styles.empowerCard}>
+              <div className={styles.empowerIcon}><i className="fa-solid fa-check"></i></div>
+              <div className={styles.empowerText}>Leverage Top LLMs to Analyze your Stock Portfolio quickly</div>
+            </div>
+            <div className={styles.empowerCard}>
+              <div className={styles.empowerIcon}><i className="fa-solid fa-check"></i></div>
+              <div className={styles.empowerText}>Set automated AI triggers on Telegram for entry opportunities</div>
+            </div>
+          </div>
+          
+          <div className={styles.empowerGridBottom}>
+            <div className={styles.empowerCard}>
+              <div className={styles.empowerIcon}><i className="fa-solid fa-check"></i></div>
+              <div className={styles.empowerText}>Screen thousands of Stocks using fundamental criteria in a fraction of the time</div>
+            </div>
+            <div className={styles.empowerCard}>
+              <div className={styles.empowerIcon}><i className="fa-solid fa-check"></i></div>
+              <div className={styles.empowerText}>The exact Prompts required to train the AI as per your Custom Strategy & Rules</div>
+            </div>
+          </div>
+        </section>
+
+        {/* Decision Section */}
+        <section className={styles.decisionSection}>
+          <h2 className={styles.decisionTitle}>THE DECISION IS YOURS TO MAKE...</h2>
+          <p className={styles.decisionSubtitle}>Are You Ready To Trade Faster, Smarter & Without Emotions? Join The Waitlist for our next class!</p>
+          <GlowButton href="#contact">Register for the Live Masterclass @ ₹499</GlowButton>
+          <p style={{fontSize: "14px", color: "#cbd5e1", marginTop: "20px"}}>Don&apos;t wait! AI is evolving fast. By joining now, you get an early-mover advantage in trading technology.</p>
+        </section>
+
+        
+        
+        {/* --- END NEW SECTIONS --- */}
+
+
         
         <section id="contact" className={styles.contactSection}>
           <div className={styles.formContainerWide}>
